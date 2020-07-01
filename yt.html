@@ -1,0 +1,34 @@
+<html>
+
+<head>
+</head>
+<link rel="stylesheet" href="css/jquery.mb.YTPlayer.css" type="text/css">
+<style>
+	body {
+		background: #000;
+	}
+</style>
+
+<body>
+	<a id="bgndVideo" class="player">TAO</a>
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script src="js/jquery.mb.YTPlayer.min.js"></script>
+<script>
+	$(function () {
+		$(".player").mb_YTPlayer({
+			videoURL: 'https://youtu.be/30oPC8Ng4U0',
+			containment: 'body',
+			autoPlay: true,
+			mute: false,
+			startAt: 0,
+			opacity: 1,
+			optimizeDisplay: false,
+			showControls: true,
+			showYTLogo: false,
+			stopMovieOnBlur: false
+		});
+	});
+</script>
+
+</html>
